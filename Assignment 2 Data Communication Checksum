@@ -1,0 +1,61 @@
+                                                  Assignment Data Communication
+                                                   FIRDA IMAM ASA / L200164001
+                    
+          (HEX)     46 49 52 44 41 20 49 4D 41 4D 20 41 53 41
+                    F  I  R  D  A     I  M  A  M     A  S  A
+                    
+                                   ----------CHECKSUM MY NAME WITH 16 BIT CALCULATION-----------
+                 CALCULATING : 46 49 52 44 41 20 49 4D 41 4D 20 41 53 41 00 00
+                 
+                 46 49 (F I)             84 89
+                 52 44 (R D)             53 41
+                 _____+                  _____+
+                 98 8D                   D7 CA
+                 41 20 (A)               
+                 _____+                  COMPLEMENT = FF FF - D7 CA
+                 D9 AD                              = 28 35
+                 49 4D (I M)
+                 _____+
+               1 22 FA
+                     1
+                 _____+
+                 22 FB
+                 41 4D (A M)
+                 _____+
+                 64 48
+                 20 41 (A)
+                 _____+
+                 84 89
+                 
+                 
+                                    ----------CHECKSUM MY NAME WITH 16 BIT CALCULATION-----------
+                 CALCULATING : 46 49 52 44 41 20 49 4D 41 4D 20 41 53 41 00
+                 
+                 46 (F)                  1E
+                 49 (I)                  41 (A)
+                 ___+                    ___+
+                 8F                      5F
+                 52 (R)                  4D (M)
+                 ___+                    ___+
+                 E1                      AC
+                 44 (D)                  20 (SPACE)
+                 ___+                    ___+
+               1 25                      CC
+                  1                      41 (A)
+                 ___+                    ___+ 
+                 26                    1 0D 
+                 41 (A)                   1
+                 ___+                    ___+
+                 67                      0E
+                 20 (SPACE)              53 (S)
+                 ___+                    ___+
+                 87                      61
+                 49 (I)                  41 (A)
+                 ___+                    ___+
+                 D0                      A2
+                 4D (M)
+                 ___+                    COMPLEMENT = FF - A2
+               1 1D                                 = 5D
+                  1
+                 ___+
+                 1E
